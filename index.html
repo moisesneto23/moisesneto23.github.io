@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Profissional - Desenvolvedor de Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        /* Estilos personalizados */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            background-color: #333;
+            color: #c4c4c4;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            /* Adicionado para centralizar o texto */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            /* Adicionado para centralizar a navegação */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #aaa;
+        }
+
+        section {
+            padding: 50px;
+            animation: slideIn 1s ease-in;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Moisés Neto</h1><br>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Sou um desenvolvedor de sistemas altamente qualificado e apaixonado por tecnologia. Com uma sólida formação
+            acadêmica em Sistemas de Informação e mais de 3 anos de experiência na indústria de desenvolvimento de
+            software, tenho habilidades e conhecimentos abrangentes para enfrentar os desafios mais complexos.
+            <br><br>
+            Minhas principais qualificações incluem:
+            <br><br>
+            - Domínio de várias linguagens de programação, como Java, C#, Python, JavaScript, php e delphi permitindo-me
+            desenvolver soluções eficientes e escaláveis.
+            <br>
+            - Experiência com frameworks e bibliotecas populares, como .Net, VueJs, Node, Entity Framework, Dapper,
+            Liquibase
+            <!-- Angular, Spring Boot,  -->
+            acelerando o processo de desenvolvimento e entregando produtos de alta qualidade.
+            <br>
+            - Profundo conhecimento em bancos de dados SQL
+            <!-- e NoSQL -->
+            , garantindo um gerenciamento eficiente de dados e a construção de sistemas robustos.
+            <br>
+            - Habilidades avançadas em Programação Orientada a Objetos, design de software, Pricipios SOLID, APIs
+            RestFull,
+            arquitetura de sistemas e padrões de desenvolvimento tanto Exagonal quanto Orientada a Domínio (DDD),
+            permitindo-me criar soluções escaláveis e de fácil manutenção.
+            <br>
+            - Experiência em trabalhar em equipes ágeis, utilizando metodologias como Scrum, garantindo uma colaboração
+            eficaz e entregas pontuais.
+            <br> <br>
+            Ao longo da minha carreira, tive a oportunidade de trabalhar em projetos desafiadores, onde pude desenvolver
+            e implementar soluções inovadoras que impactaram positivamente as operações e os resultados das empresas.
+            Minha experiência abrange desde o desenvolvimento de aplicativos web e móveis até a integração de sistemas e
+            a automação de processos.
+            <br>
+            Meu objetivo profissional é continuar aprimorando minhas habilidades e conhecimentos, mantendo-me atualizado
+            com as últimas tendências e tecnologias do setor. Busco oportunidades que me permitam enfrentar desafios
+            interessantes, colaborar com equipes talentosas e contribuir para o sucesso de projetos de alto impacto.
+            <!-- <br>
+        Estou sempre aberto a novas oportunidades e adoro estabelecer conexões com profissionais do setor. Se você está em busca de um desenvolvedor de sistemas apaixonado, comprometido e altamente qualificado, estou pronto para embarcar em novos desafios e fazer a diferença.
+        <br>
+        Entre em contato comigo para discutirmos como posso contribuir para o seu projeto ou organização. Estou ansioso para colaborar e impulsionar o sucesso através da tecnologia. -->
+        </p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript, TypeScript</li>
+            <li>Linguagens de programação como Java, Python e C#</li>
+            <li>Banco de dados SQL
+                <!-- e NoSQL -->
+            </li>
+            <li>Frameworks e bibliotecas como .Net, VueJs, Node, Entity Framework, Dapper, Liquibase
+                <!-- React, Angular e Spring Boot -->
+            </li>
+            <li>Versionamento de código com Git</li>
+            <li>Arquitetura Exagonal e Orientada a Domínio</li>
+            <li>Metodologia Ágil e Kamban</li>
+            <li>Plataformas Azure Boards, Azure DevOps e JIRA</li>
+        </ul>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+            <li>
+                <h3>ERP para orçamento de portões</h3>
+                <p>
+                    -Sistema desenvolvido com tennologia RadStudio para multiplataforma <br>
+                    -Calcula diversas variedades de modelos de portões e gera como resultado a quantidade de materia
+                    prima, custo e lucro do produto <br>
+                    -Utilizado por empresa de portão para agilizar orçamento e compra de materiais de forma rápida e
+                    acertiva, dispensando tempo calculando materiais de forma manual
+                </p>
+            </li>
+            <li>
+                <h3>Taxa Metabólica Basál</h3>
+                <p>
+                    -Sistema desenvolvido com tennologia RadStudio para Android <br>
+                    -Calcula quantidade de klocalorias que uma pessoa gasta por dia<br>
+                    -Utilizado por nuticionistas para fazer o levantamento da quantidade de alimento que a pessoa deve consumir conforme sua necessidade de emagrecer, engordar ou se manter equilibrado.
+                     Permitindo diferenciação entre homem ou mulher, adulto ou criança e tambem gestante
+                </p>
+            </li>
+            <li>
+                <h3>Treliça</h3>
+                <p>
+                    -Sistema desenvolvido com tennologia RadStudio para windows <br>
+                    -Calcula quantidade de ferro para uma determina coluna de concreto armado na construção civil<br>
+                    -Utilizado por distribuidora de ferragens para fazer o levantamento da quantidade de ferro utilizada em uma coluna ou viga de concreto armado gerando o preço total de cada coluna ou viga.
+                </p>
+            </li>
+            <li>
+                <h3>Estrutura de Concreto armado</h3>
+                <p>
+                    -Sistema desenvolvido com tennologia RadStudio para windows <br>
+                    -Calcula bitola de ferro e espaçamento entre estribos para uma determina coluna de concreto conforme o peso da lage<br>
+                    -Utilizado por Engenheiro Civil para determinar o aço adequando na construção de vigas colunas de concreto armado.
+                </p>
+            </li>
+            <li>
+                <h3>Sistemas com multiplas tecnologias e multiplas funcionalidades para atender necessidade de o grupo de faculdade Anima Educação</h3>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo para discutir oportunidades de colaboração ou para mais informações.</p>
+        <p>Email: moik.n@hotmail.com</p>
+        <p>Telefone: (75) 99840-2447</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Desenvolvedor de Sistemas</p>
+    </footer>
+</body>
+
+</html>
