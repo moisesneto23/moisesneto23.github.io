@@ -6,6 +6,13 @@
     <title>Moisés Neto - Engenheiro de Software</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        function downloadPDF() {
+            const element = document.body;
+            html2pdf().from(element).save('MoisesNeto_CV.pdf');
+        }
+    </script>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -18,16 +25,20 @@
         header {
             background: linear-gradient(90deg, #1e3a8a, #3b82f6);
             color: white;
-            padding: 2rem;
+            padding: 1.5rem; /* Reduzido de 2rem para ocupar menos espaço */
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
         nav ul {
             display: flex;
             justify-content: center;
             gap: 1.5rem;
             list-style: none;
-            padding: 1rem 0;
+            padding: 0.5rem 0; /* Reduzido para compactar */
+            margin: 0;
         }
         nav ul li a {
             color: white;
@@ -40,21 +51,22 @@
         }
         section {
             max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
+            margin: 1rem auto; /* Reduzido de 2rem para menos espaço superior */
+            padding: 1.5rem; /* Reduzido de 2rem */
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem; /* Reduzido de 2.5rem para compactar */
             margin: 0;
         }
         h2 {
-            font-size: 1.75rem;
+            font-size: 1.5rem; /* Reduzido de 1.75rem */
             color: #1e3a8a;
             border-bottom: 2px solid #3b82f6;
             padding-bottom: 0.5rem;
+            margin-top: 0; /* Remove margem superior padrão */
         }
         h3 {
             font-size: 1.25rem;
@@ -71,8 +83,6 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            position: relative;
-            bottom: 0;
             width: 100%;
         }
         .project-card {
@@ -85,7 +95,7 @@
 <body>
     <header>
         <h1>Moisés Neto</h1>
-        <p class="text-lg mt-2">Engenheiro de Software | Especialista em Soluções Escaláveis</p>
+        <p class="text-md mt-1">Engenheiro de Software | Especialista em Soluções Escaláveis</p>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -156,7 +166,7 @@
         <div class="project-card">
             <h3>Grupo Ânima Educação</h3>
             <p>
-                Sistemas diversos com múltiplas tecnologias para atender demandas acadêmicas, incluindo integrações e automações personalizadas. Integra AWS SQS FIFO para mensageria assíncrona, Azure DevOps para CI/CD. Alem de diversas integrações com sistemas legados.
+                Sistemas diversos com múltiplas tecnologias integrando AWS SQS FIFO para mensageria assíncrona, Azure DevOps para CI/CD para atender demandas acadêmicas, incluindo integrações e automações personalizadas.
             </p>
         </div>
     </section>
@@ -167,7 +177,7 @@
         <p>Telefone: <a href="tel:+5575998402447">(75) 99840-2447</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/moisesnetodeveloper/" target="_blank">moisesnetodeveloper</a></p>
     </section>
-
+    <button onclick="downloadPDF()" class="fixed bottom-4 right-4 bg-blue-600 text-white p-2 rounded">Baixar PDF</button>
     <footer>
         <p>© 2023 Moisés Neto - Engenheiro de Software</p>
     </footer>
