@@ -1,106 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação Profissional - Engenheiro de Software</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Moisés Neto - Engenheiro de Software</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateX(-100%);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        /* Estilos personalizados */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
             margin: 0;
             padding: 0;
-            animation: fadeIn 1s ease-in;
+            line-height: 1.6;
         }
-
         header {
-            background-color: #333;
-            color: #c4c4c4;
-            padding: 20px;
-        }
-
-        h1 {
-            margin: 0;
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 2rem;
             text-align: center;
-            /* Adicionado para centralizar o texto */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         nav ul {
             display: flex;
             justify-content: center;
-            /* Adicionado para centralizar a navegação */
+            gap: 1.5rem;
             list-style: none;
-            margin: 0;
-            padding: 0;
+            padding: 1rem 0;
         }
-
-        nav ul li {
-            display: inline;
-            text-align: center;
-            margin-right: 10px;
-        }
-
         nav ul li a {
-            color: #fff;
+            color: white;
             text-decoration: none;
+            font-weight: 500;
             transition: color 0.3s;
         }
-
         nav ul li a:hover {
-            color: #aaa;
+            color: #dbeafe;
         }
-
         section {
-            padding: 50px;
-            animation: slideIn 1s ease-in;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
-
-        h2 {
-            margin-top: 0;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer p {
+        h1 {
+            font-size: 2.5rem;
             margin: 0;
+        }
+        h2 {
+            font-size: 1.75rem;
+            color: #1e3a8a;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            color: #374151;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .project-card {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-left: 4px solid #3b82f6;
         }
     </style>
 </head>
-
 <body>
     <header>
-        <h1>Moisés Neto</h1><br>
+        <h1>Moisés Neto</h1>
+        <p class="text-lg mt-2">Engenheiro de Software | Especialista em Soluções Escaláveis</p>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -112,136 +97,79 @@
     </header>
 
     <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Sou um desenvolvedor de sistemas altamente qualificado e apaixonado por tecnologia. Com uma sólida formação
-            acadêmica em Sistemas de Informação e mais de 3 anos de experiência na indústria de desenvolvimento de
-            software, tenho habilidades e conhecimentos abrangentes para enfrentar os desafios mais complexos.
-            <br><br>
-            Minhas principais qualificações incluem:
-            <br><br>
-            - Domínio de várias linguagens de programação, como Java, C#, Python, JavaScript, php e delphi permitindo-me
-            desenvolver soluções eficientes e escaláveis.
-            <br>
-            - Experiência com frameworks e bibliotecas populares, como .Net, VueJs, Node, Entity Framework, Dapper,
-            Liquibase
-            <!-- Angular, Spring Boot,  -->
-            acelerando o processo de desenvolvimento e entregando produtos de alta qualidade.
-            <br>
-            - Profundo conhecimento em bancos de dados SQL
-            <!-- e NoSQL -->
-            , garantindo um gerenciamento eficiente de dados e a construção de sistemas robustos.
-            <br>
-            - Habilidades avançadas em Programação Orientada a Objetos, design de software, Pricipios SOLID, APIs
-            RestFull,
-            arquitetura de sistemas e padrões de desenvolvimento tanto Exagonal quanto Orientada a Domínio (DDD),
-            permitindo-me criar soluções escaláveis e de fácil manutenção.
-            <br>
-            - Experiência em trabalhar em equipes ágeis, utilizando metodologias como Scrum, garantindo uma colaboração
-            eficaz e entregas pontuais.
-            <br> <br>
-            Ao longo da minha carreira, tive a oportunidade de trabalhar em projetos desafiadores, onde pude desenvolver
-            e implementar soluções inovadoras que impactaram positivamente as operações e os resultados das empresas.
-            Minha experiência abrange desde o desenvolvimento de aplicativos web e móveis até a integração de sistemas e
-            a automação de processos.
-            <br>
-            Meu objetivo profissional é continuar aprimorando minhas habilidades e conhecimentos, mantendo-me atualizado
-            com as últimas tendências e tecnologias do setor. Busco oportunidades que me permitam enfrentar desafios
-            interessantes, colaborar com equipes talentosas e contribuir para o sucesso de projetos de alto impacto.
-            <!-- <br>
-        Estou sempre aberto a novas oportunidades e adoro estabelecer conexões com profissionais do setor. Se você está em busca de um desenvolvedor de sistemas apaixonado, comprometido e altamente qualificado, estou pronto para embarcar em novos desafios e fazer a diferença.
-        <br>
-        Entre em contato comigo para discutirmos como posso contribuir para o seu projeto ou organização. Estou ansioso para colaborar e impulsionar o sucesso através da tecnologia. -->
+        <h2>Sobre Mim</h2>
+        <p>
+            Engenheiro de Software com mais de 3 anos de experiência no desenvolvimento de sistemas robustos e escaláveis. Formado em Sistemas de Informação, combino expertise técnica com uma paixão por inovação para criar soluções que otimizam processos e geram impacto real. Minha trajetória inclui projetos complexos em construção civil, automação e integração de sistemas, utilizando tecnologias modernas e metodologias ágeis.
+        </p>
+        <p>
+            Sou especialista em arquiteturas distribuídas, microserviços e ferramentas de DevOps, com destaque para AWS (SQS FIFO), Azure DevOps (Boards, Pipelines) e Azure Service Bus. Busco desafios que me permitam aplicar minha experiência em design de software, POO, DDD e integração de APIs RESTful, sempre com foco em qualidade e escalabilidade.
         </p>
     </section>
 
     <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>AWS Amazon Web Services</li>
-            <li>Arquitetura Exagonal e Orientada a Domínio</li>
-            <li>Metodologia Ágil e Kamban</li>
-            <li>Plataformas Azure Boards, Azure DevOps, Azure Pipeline e JIRA</li>
-            <li>Frameworks e bibliotecas como .Net, VueJs, Node, Entity Framework, Dapper</li>
-            <li>Versionamento de código com Git</li>
-            <li>GitLab</li>
-            <li>GitHub</li>
-            <li>Linguagens de programação como Java, Python, C#, PHP e DELPHI</li>
-            <li>Serviço de mensageria Service Bus</li>
-            <li>Banco de dados Oracle</li>
-            <li>Banco de dados MySql</li>
-            <li>Banco de dados PostgreSql</li>
-            <li>Banco de dados SqlServer</li>
-            <li>Ferramenta de migração de banco de dados LIQUIBASE</li>
-            <li>HTML5, CSS3, JavaScript, TypeScript</li>
-          
-            <!-- e NoSQL -->
-        </ul><!-- React, Angular e Spring Boot -->
+        <h2>Habilidades Técnicas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <ul>
+                <li><strong>Linguagens:</strong> C#, Java, Python, JavaScript, TypeScript, PHP, Delphi</li>
+                <li><strong>Frameworks:</strong> .NET Core, Vue.js, Node.js, Entity Framework, Dapper</li>
+                <li><strong>Bancos de Dados:</strong> SQL Server, PostgreSQL, MySQL, Oracle</li>
+                <li><strong>Cloud e Mensageria:</strong> AWS SQS (FIFO), Azure Service Bus</li>
+                <li><strong>DevOps:</strong> Azure DevOps (Boards, Pipelines), Git, GitHub, GitLab</li>
+            </ul>
+            <ul>
+                <li><strong>Ferramentas:</strong> Liquibase, Jira, Kanban</li>
+                <li><strong>Arquitetura:</strong> Microserviços, DDD, Hexagonal, SOLID</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3 (Tailwind), Vuetify</li>
+                <li><strong>Metodologias:</strong> Scrum, Agile</li>
+                <li><strong>Outros:</strong> APIs RESTful, JWT, CI/CD</li>
+            </ul>
+        </div>
     </section>
 
     <section id="projetos">
-        <h2>Projetos</h2>
-        <ul>
-            <li>
-                <h3>Sistema Para orçamento de obras</h3>
-                <h4>www.orcamentodeobra.com.br</h4>
-                <p>
-                    -Microserviços desenvolvido com tennologia .Net Core  e vueJs<br>
-                    -Calcula o levantamento de qualquer produto personalizado em até 3 dimenções e gera o resultado detalhado com custo de tudo que sera utilizado<br>
-                    -Utilizado por qualquer empresa que trabalhe com construção civil, alem empresas de esquadrias em geral como marcenaria, serralheria e vidraçaria.
-                </p>
-            </li>
-            <li>
-                <h3>ERP para orçamento de portões</h3>
-                <p>
-                    -Sistema desenvolvido com tennologia RadStudio para multiplataforma <br>
-                    -Calcula diversas variedades de modelos de portões e gera como resultado a quantidade de materia
-                    prima, custo e lucro do produto <br>
-                    -Utilizado por empresa de portão para agilizar orçamento e compra de materiais de forma rápida e
-                    acertiva, dispensando tempo calculando materiais de forma manual
-                </p>
-            </li>
-            <li>
-                <h3>Taxa Metabólica Basál</h3>
-                <p>
-                    -Sistema desenvolvido com tennologia RadStudio para Android <br>
-                    -Calcula quantidade de klocalorias que uma pessoa gasta por dia<br>
-                    -Utilizado por nuticionistas para fazer o levantamento da quantidade de alimento que a pessoa deve consumir conforme sua necessidade de emagrecer, engordar ou se manter equilibrado.
-                     Permitindo diferenciação entre homem ou mulher, adulto ou criança e tambem gestante
-                </p>
-            </li>
-            <li>
-                <h3>Treliça</h3>
-                <p>
-                    -Sistema desenvolvido com tennologia RadStudio para windows <br>
-                    -Calcula quantidade de ferro para uma determina coluna de concreto armado na construção civil<br>
-                    -Utilizado por distribuidora de ferragens para fazer o levantamento da quantidade de ferro utilizada em uma coluna ou viga de concreto armado gerando o preço total de cada coluna ou viga.
-                </p>
-            </li>
-            <li>
-                <h3>Estrutura de Concreto armado</h3>
-                <p>
-                    -Sistema desenvolvido com tennologia RadStudio para windows <br>
-                    -Calcula bitola de ferro e espaçamento entre estribos para uma determina coluna de concreto conforme o peso da lage<br>
-                    -Utilizado por Engenheiro Civil para determinar o aço adequando na construção de vigas colunas de concreto armado.
-                </p>
-            </li>
-            <li>
-                <h3>Sistemas com multiplas tecnologias e multiplas funcionalidades para atender necessidade de o grupo de faculdade Anima Educação</h3>
-            </li>
-        </ul>
+        <h2>Projetos Destaques</h2>
+        <div class="project-card">
+            <h3>Sistema de Orçamento de Obras</h3>
+            <p><strong>Site:</strong> <a href="http://www.sistemadeobra.com.br" target="_blank">www.sistemadeobra.com.br</a></p>
+            <p>
+                Plataforma SaaS em microserviços (.NET Core, Vue.js) para cálculo de orçamentos personalizados em construção civil. PostgreSQL para dados. Usado por marmorarias, serralherias e vidraçarias, oferece precisão em cálculos de materiais e margens de lucro em tempo real.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>ERP para Orçamento de Portões</h3>
+            <p>
+                Sistema multiplataforma (RadStudio) que calcula materiais e custos de portões. Automatiza orçamentos e compras, reduzindo erros manuais em serralherias.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Taxa Metabólica Basal</h3>
+            <p>
+                Aplicativo Android (RadStudio) para nutricionistas, calcula calorias diárias considerando gênero, idade e gestação, otimizando planos alimentares.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Estruturas de Concreto Armado</h3>
+            <p>
+                Ferramenta desktop (RadStudio) para engenheiros civis, calcula bitolas de aço e espaçamentos em vigas e colunas, integrada a distribuidoras de ferragens.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Grupo Ânima Educação</h3>
+            <p>
+                Sistemas diversos com múltiplas tecnologias para atender demandas acadêmicas, incluindo integrações e automações personalizadas. Integra AWS SQS FIFO para mensageria assíncrona, Azure DevOps para CI/CD. Alem de diversas integrações com sistemas legados.
+            </p>
+        </div>
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
-        <!-- <p>Entre em contato comigo para discutir oportunidades de colaboração ou para mais informações.</p> -->
-        <p>Email: moik.n@hotmail.com</p>
-        <p>Telefone: (75) 99840-2447</p>
-        <p>Linkedin: https://www.linkedin.com/in/moisesnetodeveloper/</p>
+        <p>Email: <a href="mailto:moik.n@hotmail.com">moik.n@hotmail.com</a></p>
+        <p>Telefone: <a href="tel:+5575998402447">(75) 99840-2447</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/moisesnetodeveloper/" target="_blank">moisesnetodeveloper</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Desenvolvedor de Sistemas</p>
+        <p>© 2023 Moisés Neto - Engenheiro de Software</p>
     </footer>
 </body>
-
 </html>
